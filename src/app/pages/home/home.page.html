@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Wiki Fish</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let peixe of peixes">
+    <app-card [peixe]="peixe"></app-card>
+  </div>
+</ion-content>

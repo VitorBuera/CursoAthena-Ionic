@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Cadastro</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuário</ion-label>
+        <ion-input placeholder=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  position="floating">Senha</ion-label>
+        <ion-input type="password" value=""></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-footer align="end">
+    <ion-button shape="round" color="danger" (click)="voltar()">Voltar</ion-button>
+    <ion-button shape="round" color="primary" (click)="cadastrar()">Cadastrar</ion-button>
+    </ion-footer>
+  </ion-card>
+</ion-content>
