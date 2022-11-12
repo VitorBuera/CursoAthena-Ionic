@@ -7,7 +7,7 @@
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
-      <img [src]="peixe['Species Illustration Photo']?.src" />
+      <img [style]="'background-color:' + peixe['Quote Background Color'] + '50'" [src]="peixe['Species Illustration Photo']?.src" />
       <ion-content class="ion-padding">
         <p [innerHTML]="peixe['Physical Description']">
         </p>

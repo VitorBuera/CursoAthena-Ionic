@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./cadastro.page.scss'],
 })
 export class CadastroPage implements OnInit {
+nome: string;
+senha: string;
 
   constructor(
     private router: Router
@@ -20,6 +22,14 @@ export class CadastroPage implements OnInit {
   }
 
   cadastrar() {
+    const usuarios = JSON.parse(localStorage.getItem('Usuarios') || '[]');
 
+    usuarios.push({
+      nome: this.nome,
+      senha: this.senha
+    });
+
+    localStorage.setItem('Usuarios', JSON.stringify(usuarios));
+    this.router.navigate(['/']);
   }
 }
