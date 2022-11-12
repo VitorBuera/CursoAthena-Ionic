@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cursoathena-ionic": {
+      "hosting": {
+        "app": [
+          "cursoathena-ionic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cursoathena-ionic"
+  }
+}
